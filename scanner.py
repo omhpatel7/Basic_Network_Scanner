@@ -1,7 +1,7 @@
 from scapy.all import ARP, Ether, srp
 import socket
 
-target = "192.168.50.1/24"  # IP Address range to scan
+target = "10.162.50.0/24"  # IP Address range to scan
 
 # Create ARP packet
 arp_packet = ARP(pdst=target)
@@ -42,4 +42,3 @@ try:
 
 except Exception as e:
     print("An error occurred:", e)
-
